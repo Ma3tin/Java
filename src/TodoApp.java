@@ -68,11 +68,14 @@ public class TodoApp {
                         homework = Integer.parseInt(sc.nextLine());
                         homework -= 1;
                         tasky[homework] = "";
-                        tasks = 0;
+                        tasks -= 1;
                         System.out.println("-----------------------------------------------------");
                         System.out.println("You can add up to 10 tasks!");
                         System.out.println("You have " + (tasks) + "/10!");
                         System.out.println("-----------------------------------------------------");
+                        for (int i = 0; i < tasks; i++) {
+                            System.out.println(tasky[i]);
+                        }
                     }
                 }
             }
